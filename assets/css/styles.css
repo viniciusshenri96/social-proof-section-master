@@ -1,0 +1,180 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+  /*========== Colors ==========*/
+
+  /* primary */
+  --color-VeryDark: #502050;
+  --color-SoftPink: #ee68a4;
+  /* Neutral */
+  --color-DarkGrayish: #937b92;
+  --color-LightGrayish: #f7f2f7;
+  --white: #ffffff;
+
+  /*========== Font and typography ==========*/
+  --body-font: "League Spartan", sans-serif;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --h1-font-size: 3.5rem;
+  --normal-font-size: 1.063rem;
+  --font-text: 1.188rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+}
+
+/*==================== BASE ====================*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*==================== LAYOUT ====================*/
+.container {
+  max-width: 1110px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+@media (min-width: 1200px) {
+  .container {
+    margin: 0 auto;
+  }
+}
+
+/*==================== MAIN ====================*/
+.section {
+  padding-top: 117px;
+  display: grid;
+  row-gap: 72px;
+}
+
+.section__intro {
+  display: grid;
+  grid-template-columns: auto 540px;
+  justify-items: start;
+  column-gap: 125px;
+}
+.section__box {
+  display: grid;
+  row-gap: 16px;
+  max-width: 420px;
+}
+.section__title {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-bold);
+  line-height: 0.86;
+  letter-spacing: -0.125rem;
+  color: var(--color-VeryDark);
+}
+.section__info {
+  font-size: var(--font-text);
+  font-weight: var(--font-medium);
+  line-height: 1.32;
+  letter-spacing: -0.04rem;
+  color: var(--color-DarkGrayish);
+}
+.section__rated {
+  display: grid;
+  align-content: start;
+  justify-items: start;
+  row-gap: 16px;
+}
+.section__item {
+  width: 445px;
+  background-color: var(--color-LightGrayish);
+  border-radius: 8px;
+  display: flex;
+  column-gap: 32px;
+}
+.section__item:nth-child(1) {
+  padding: 20px 79px 20px 32px;
+}
+.section__item:nth-child(2) {
+  padding: 20px 47px 20px 32px;
+  margin-left: 48px;
+}
+.section__item:nth-child(3) {
+  padding: 20px 76px 20px 32px;
+  margin-left: 95px;
+}
+
+.section__desc {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-bold);
+  line-height: 0.94;
+  color: var(--color-VeryDark);
+}
+
+/* ==========TESTIMONIAL========== */
+.section__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 266px;
+  align-items: start;
+  column-gap: 30px;
+}
+.section__testimonial {
+  padding: 40px 32px 35px;
+  border-radius: 8px;
+  background-color: var(--color-VeryDark);
+  color: var(--white);
+}
+.section__perfil {
+  display: flex;
+  align-items: center;
+  column-gap: 23px;
+  margin-bottom: 31px;
+}
+.section__icon {
+  width: 40px;
+  border-radius: 50%;
+}
+.section__name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-bold);
+  line-height: 0.94;
+  margin-bottom: 4px;
+}
+.section__verified {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-regular);
+  line-height: 0.94;
+  color: var(--color-SoftPink);
+}
+
+.section__quote {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  line-height: 1.29;
+  letter-spacing: -0.019rem;
+  color: var(--white);
+}
+.section__testimonial:nth-child(2) {
+  align-self: center;
+}
+.section__testimonial:nth-child(3) {
+  align-self: end;
+}
+
+/* ===========MEDIA QUERIES========== */
