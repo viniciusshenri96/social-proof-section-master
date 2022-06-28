@@ -188,7 +188,7 @@ h1 {
 
 /* ===========MEDIA QUERIES========== */
 
-@media (max-width: 172.5rem) {
+@media (max-width: 72.5rem) {
   .container {
     margin-left: 2rem;
     margin-right: 2rem;
